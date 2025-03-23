@@ -1,2 +1,0 @@
-# abozaid-website
-abozaid-website
