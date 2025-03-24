@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramzy - صفحة خاصة</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f0f0f0; }
+        h1 { color: #0b3d91; }
+        input, button { padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        #content { display: none; margin-top: 20px; }
+        img { margin-top: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "ramzytezo7amra") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("كلمة المرور غير صحيحة");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>دخول إلى صفحة Ramzy</h1>
+    <div id="login">
+        <p>من فضلك أدخل كلمة المرور:</p>
+        <input type="password" id="password" placeholder="كلمة المرور">
+        <button onclick="checkPassword()">دخول</button>
+    </div>
+    <div id="content">
+        <h2>مرحبًا بك في صفحة Ramzy الخاصة!</h2>
+        <p>هذه صورتك الخاصة:</p>
+        <img src="images/photo1.jpg" alt="صورة سرية" width="400">
+    </div>
+</body>
+</html>
