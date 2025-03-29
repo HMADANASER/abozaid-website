@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>لوحة التحكم</h1>
+    <button id="logout-button">تسجيل الخروج</button>
+    <form id="add-employee-form">
+      <h2>إضافة موظف جديد</h2>
+      <!-- حقول الإدخال -->
+      <input type="text" id="fullName" placeholder="الاسم الكامل" required>
+      <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+      <input type="text" id="jobTitle" placeholder="الوظيفة" required>
+      <input type="text" id="department" placeholder="القسم" required>
+      <input type="text" id="username" placeholder="اسم المستخدم" required>
+      <input type="password" id="password" placeholder="كلمة السر" required>
+      <select id="role">
+        <option value="Employee">موظف</option>
+        <option value="Admin">مدير</option>
+      </select>
+      <button type="submit">إضافة</button>
+    </form>
+    <table id="employees-table">
+      <thead>
+        <tr>
+          <th>الاسم الكامل</th>
+          <th>البريد الإلكتروني</th>
+          <th>الوظيفة</th>
+          <th>القسم</th>
+          <th>اسم المستخدم</th>
+          <th>الصلاحية</th>
+          <th>إجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- يتم تعبئة البيانات هنا -->
+      </tbody>
+    </table>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
