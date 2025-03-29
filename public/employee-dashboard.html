@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الموظف</title>
+</head>
+<body>
+  <h1>مرحبًا بك في لوحة الموظف</h1>
+  <form id="employee-data-form">
+    <label for="data">أدخل بياناتك:</label>
+    <input type="text" id="data" required>
+    <button type="submit">إرسال</button>
+  </form>
+  <script>
+    document.getElementById('employee-data-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = document.getElementById('data').value;
+      alert(`تم إرسال البيانات: ${data}`);
+    });
+  </script>
+</body>
+</html>
